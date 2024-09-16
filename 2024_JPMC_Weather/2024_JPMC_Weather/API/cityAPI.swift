@@ -10,6 +10,7 @@
 import Combine
 import Foundation
 
+
 class CityAPI {
     static func fetchCoordinates(for cityName: String, stateCode: String? = nil, countryCode: String? = nil) -> AnyPublisher<[CityCoordinates], Error> {
         // Replace spaces with underscores in the city name

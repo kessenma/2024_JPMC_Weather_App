@@ -6,15 +6,15 @@
 //
 import Foundation
 
-struct WeatherModel: Codable {
-    struct Weather: Codable {
+struct WeatherModel: Codable, Equatable {
+    struct Weather: Codable, Equatable {
         let id: Int
         let main: String
         let description: String
         let icon: String
     }
 
-    struct Main: Codable {
+    struct Main: Codable, Equatable {
         let temp: Double
         let feels_like: Double
         let temp_min: Double
@@ -23,12 +23,12 @@ struct WeatherModel: Codable {
         let humidity: Int
     }
 
-    struct Wind: Codable {
+    struct Wind: Codable, Equatable {
         let speed: Double
         let deg: Int
     }
 
-    struct Clouds: Codable {
+    struct Clouds: Codable, Equatable {
         let all: Int
     }
 
@@ -40,14 +40,13 @@ struct WeatherModel: Codable {
     let name: String
     let cod: Int
 
-    struct Coord: Codable {
+    struct Coord: Codable, Equatable {
         let lon: Double
         let lat: Double
     }
 }
 
-
-struct CityCoordinates: Codable, Identifiable {
+struct CityCoordinates: Codable, Identifiable, Equatable {
     let id = UUID() // Unique identifier for SwiftUI
     let name: String
     let lat: Double
