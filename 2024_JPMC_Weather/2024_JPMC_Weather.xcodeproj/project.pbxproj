@@ -19,17 +19,15 @@
 		5672D8C32C966486007315E0 /* weatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8C22C966486007315E0 /* weatherAPI.swift */; };
 		5672D8C62C97825E007315E0 /* currentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8C52C97825E007315E0 /* currentLocation.swift */; };
 		5672D8C82C9782E6007315E0 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8C72C9782E6007315E0 /* Main.swift */; };
-		5672D8CA2C9783E6007315E0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8C92C9783E6007315E0 /* SearchBar.swift */; };
-		5672D8CC2C9783FF007315E0 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8CB2C9783FF007315E0 /* SearchResult.swift */; };
-		5672D8CE2C97859A007315E0 /* zipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8CD2C97859A007315E0 /* zipCode.swift */; };
 		5672D8D02C978610007315E0 /* cityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8CF2C978610007315E0 /* cityAPI.swift */; };
-		5672D8D22C97864E007315E0 /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8D12C97864E007315E0 /* state.swift */; };
-		5672D8D42C978664007315E0 /* country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8D32C978664007315E0 /* country.swift */; };
 		5672D8D72C9787BB007315E0 /* CurrenLocationRequestModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8D62C9787BB007315E0 /* CurrenLocationRequestModal.swift */; };
 		5672D8DC2C979C4C007315E0 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5672D8DB2C979C4C007315E0 /* Property List.plist */; };
 		5672D8E72C97E748007315E0 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8E62C97E748007315E0 /* CityViewModel.swift */; };
 		5672D8EA2C97E75B007315E0 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8E92C97E75B007315E0 /* CityView.swift */; };
 		5672D8EC2C97EB02007315E0 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8EB2C97EB02007315E0 /* env.swift */; };
+		5672D8EE2C97FAC7007315E0 /* WeatherSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8ED2C97FAC7007315E0 /* WeatherSheetView.swift */; };
+		5672D8F02C97FB96007315E0 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8EF2C97FB96007315E0 /* HistoryViewModel.swift */; };
+		5672D8F22C97FBAB007315E0 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8F12C97FBAB007315E0 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,17 +45,15 @@
 		5672D8C42C966C4A007315E0 /* APIKeys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKeys.xcconfig; sourceTree = "<group>"; };
 		5672D8C52C97825E007315E0 /* currentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentLocation.swift; sourceTree = "<group>"; };
 		5672D8C72C9782E6007315E0 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		5672D8C92C9783E6007315E0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		5672D8CB2C9783FF007315E0 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		5672D8CD2C97859A007315E0 /* zipCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zipCode.swift; sourceTree = "<group>"; };
 		5672D8CF2C978610007315E0 /* cityAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityAPI.swift; sourceTree = "<group>"; };
-		5672D8D12C97864E007315E0 /* state.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = state.swift; sourceTree = "<group>"; };
-		5672D8D32C978664007315E0 /* country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = country.swift; sourceTree = "<group>"; };
 		5672D8D62C9787BB007315E0 /* CurrenLocationRequestModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenLocationRequestModal.swift; sourceTree = "<group>"; };
 		5672D8DB2C979C4C007315E0 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		5672D8E62C97E748007315E0 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		5672D8E92C97E75B007315E0 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		5672D8EB2C97EB02007315E0 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		5672D8ED2C97FAC7007315E0 /* WeatherSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSheetView.swift; sourceTree = "<group>"; };
+		5672D8EF2C97FB96007315E0 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		5672D8F12C97FBAB007315E0 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +125,8 @@
 				5672D8C72C9782E6007315E0 /* Main.swift */,
 				5672D8BF2C96640F007315E0 /* CurrentLocation.swift */,
 				5672D8D62C9787BB007315E0 /* CurrenLocationRequestModal.swift */,
-				5672D8C92C9783E6007315E0 /* SearchBar.swift */,
-				5672D8CB2C9783FF007315E0 /* SearchResult.swift */,
 				5672D8E62C97E748007315E0 /* CityViewModel.swift */,
+				5672D8EF2C97FB96007315E0 /* HistoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -150,10 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5672D8C52C97825E007315E0 /* currentLocation.swift */,
-				5672D8CD2C97859A007315E0 /* zipCode.swift */,
 				5672D8CF2C978610007315E0 /* cityAPI.swift */,
-				5672D8D12C97864E007315E0 /* state.swift */,
-				5672D8D32C978664007315E0 /* country.swift */,
 			);
 			path = convert;
 			sourceTree = "<group>";
@@ -162,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				5672D8E92C97E75B007315E0 /* CityView.swift */,
+				5672D8ED2C97FAC7007315E0 /* WeatherSheetView.swift */,
+				5672D8F12C97FBAB007315E0 /* History.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5672D8E72C97E748007315E0 /* CityViewModel.swift in Sources */,
-				5672D8CC2C9783FF007315E0 /* SearchResult.swift in Sources */,
+				5672D8EE2C97FAC7007315E0 /* WeatherSheetView.swift in Sources */,
 				5672D8B02C96615D007315E0 /* Persistence.swift in Sources */,
 				5672D8D72C9787BB007315E0 /* CurrenLocationRequestModal.swift in Sources */,
 				5672D8EC2C97EB02007315E0 /* env.swift in Sources */,
@@ -247,15 +241,13 @@
 				5672D8C82C9782E6007315E0 /* Main.swift in Sources */,
 				5672D8C02C96640F007315E0 /* CurrentLocation.swift in Sources */,
 				5672D8EA2C97E75B007315E0 /* CityView.swift in Sources */,
-				5672D8D22C97864E007315E0 /* state.swift in Sources */,
-				5672D8D42C978664007315E0 /* country.swift in Sources */,
 				5672D8A92C96615C007315E0 /* ContentView.swift in Sources */,
+				5672D8F02C97FB96007315E0 /* HistoryViewModel.swift in Sources */,
+				5672D8F22C97FBAB007315E0 /* History.swift in Sources */,
 				5672D8C62C97825E007315E0 /* currentLocation.swift in Sources */,
 				5672D8A72C96615C007315E0 /* _024_JPMC_WeatherApp.swift in Sources */,
-				5672D8CA2C9783E6007315E0 /* SearchBar.swift in Sources */,
 				5672D8D02C978610007315E0 /* cityAPI.swift in Sources */,
 				5672D8B32C96615D007315E0 /* _024_JPMC_Weather.xcdatamodeld in Sources */,
-				5672D8CE2C97859A007315E0 /* zipCode.swift in Sources */,
 				5672D8BD2C9663C3007315E0 /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

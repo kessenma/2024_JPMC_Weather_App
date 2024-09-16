@@ -9,10 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var mainViewModel = MainViewModel()
+    @StateObject private var historyViewModel = HistoryViewModel()
+    @StateObject private var cityViewModel: CityViewModel
+    @StateObject private var mainViewModel = MainViewModel()
+
+    init() {
+        let history = HistoryViewModel()
+        _historyViewModel = StateObject(wrappedValue: history)
+        _cityViewModel = StateObject(wrappedValue: CityViewModel(historyViewModel: history))
+        _mainViewModel = StateObject(wrappedValue: MainViewModel())
+    }
 
     var body: some View {
-        MainView(viewModel: mainViewModel)
+        MainView(viewModel: mainViewModel, historyViewModel: historyViewModel, cityViewModel: cityViewModel)
     }
 }
 

@@ -69,6 +69,8 @@ class MainViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
 
 struct MainView: View {
     @ObservedObject var viewModel: MainViewModel
+    @ObservedObject var historyViewModel: HistoryViewModel
+    @ObservedObject var cityViewModel: CityViewModel
     
     var body: some View {
         NavigationView {
@@ -81,10 +83,18 @@ struct MainView: View {
                         .cornerRadius(8)
                 }
 
-                NavigationLink(destination: CityView()) {
+                NavigationLink(destination: CityView(historyViewModel: historyViewModel, cityViewModel: cityViewModel)) {
                     Text("Search Weather by City")
                         .padding()
                         .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+
+                NavigationLink(destination: HistoryView(historyViewModel: historyViewModel, cityViewModel: cityViewModel)) {
+                    Text("History")
+                        .padding()
+                        .background(Color.orange)
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }

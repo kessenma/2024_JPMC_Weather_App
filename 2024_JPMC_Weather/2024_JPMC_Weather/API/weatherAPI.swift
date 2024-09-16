@@ -5,7 +5,7 @@
 //  Created by Kyle Essenmacher on 9/14/24.
 //
 // once the app has a lat and long cordinate to search with I want to use this file to make the call to the API with this API formatting:
-// GET: http://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&appid=546270a7ad449f00a347299e8837e71b
+// GET: http://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&appid=[API key]
 // the key a the end is the API KET
 
 import Foundation
@@ -19,11 +19,13 @@ enum WeatherError: Error {
 
 class WeatherAPI {
     static func fetchWeather(latitude: Double, longitude: Double) -> AnyPublisher<WeatherModel, WeatherError> {
-        guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
-            fatalError("API Key not found")
-        }
+        let apiKey = Env.apiKey // Use the apiKey from Env struct
         
-        let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
+        // Use the 2.5/weather endpoint for your API calls
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
+        
+        // Output the URL for debugging
+        print("Weather API URL being sent: \(urlString)")
         
         guard let url = URL(string: urlString) else {
             return Fail(error: WeatherError.invalidURL).eraseToAnyPublisher()

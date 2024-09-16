@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CityView: View {
-    @ObservedObject var cityViewModel = CityViewModel() // Use ObservedObject here
+    @ObservedObject var historyViewModel: HistoryViewModel
+    @ObservedObject var cityViewModel: CityViewModel
+    @State private var showWeatherSheet = false // Controls the sheet presentation
     
     var body: some View {
         VStack {
@@ -35,21 +37,38 @@ struct CityView: View {
             }
             .padding()
 
-            if let coordinates = cityViewModel.cityCoordinates {
-                if !coordinates.lat.isNaN && !coordinates.lon.isNaN {
-                    Text("Coordinates: \(coordinates.lat), \(coordinates.lon)")
-                } else {
-                    Text("Invalid coordinates received.")
-                        .foregroundColor(.red)
+            if !cityViewModel.cityResults.isEmpty {
+                Text("Select a city:")
+                    .font(.headline)
+                    .padding(.top)
+                
+                // Display city results as a list
+                List(cityViewModel.cityResults) { result in
+                    Button(action: {
+                        cityViewModel.selectCity(result) // Call the function correctly
+                        showWeatherSheet = true // Show the sheet when a city is selected
+                    }) {
+                        VStack(alignment: .leading) {
+                            Text("\(result.name), \(result.state ?? "N/A"), \(result.country)")
+                            Text("Lat: \(result.lat), Lon: \(result.lon)")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
+                        }
+                    }
                 }
-            }
-
-            if let errorMessage = cityViewModel.errorMessage {
-                Text(errorMessage)
-                    .foregroundColor(.red)
+                .frame(height: 300) // Adjust height of the list as needed
             }
         }
         .navigationTitle("Search by City")
         .padding()
+        
+        // Weather Sheet
+        .sheet(isPresented: $showWeatherSheet) {
+            if let weatherData = cityViewModel.weatherData {
+                WeatherSheetView(weatherData: weatherData) // Pass the weather data to the sheet
+            } else {
+                Text("Loading weather data...") // Placeholder while data is loading
+            }
+        }
     }
 }
