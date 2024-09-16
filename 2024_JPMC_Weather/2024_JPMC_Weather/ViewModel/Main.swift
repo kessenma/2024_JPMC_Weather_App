@@ -1,5 +1,5 @@
 //
-//  app/ViewModal/main.swift
+//  app/ViewModal/Main.swift
 //  2024_JPMC_Weather
 //
 //  Created by Kyle Essenmacher on 9/15/24.
@@ -72,7 +72,7 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            VStack {                
+            VStack {
                 NavigationLink(destination: CurrentLocationRequestModal(viewModel: viewModel)) {
                     Text("Current Location Weather")
                         .padding()
@@ -80,7 +80,15 @@ struct MainView: View {
                         .foregroundColor(.white)
                         .cornerRadius(8)
                 }
-                
+
+                NavigationLink(destination: CityView()) {
+                    Text("Search Weather by City")
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+
                 if viewModel.isLocationPermissionGranted {
                     if let weatherData = viewModel.weatherData {
                         WeatherView(weatherData: weatherData)
@@ -88,7 +96,7 @@ struct MainView: View {
                         ProgressView("Loading weather data...")
                     }
                 }
-                
+
                 if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
                         .foregroundColor(.red)

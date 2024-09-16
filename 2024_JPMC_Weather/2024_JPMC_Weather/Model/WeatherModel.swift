@@ -20,5 +20,11 @@ struct Main: Codable {
 }
 
 
+struct CityCoordinates: Codable {
+    let lat: Double
+    let lon: Double
+}
+
+
 
 
