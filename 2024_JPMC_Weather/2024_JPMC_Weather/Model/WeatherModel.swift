@@ -1,24 +1,24 @@
 //
-//  WeatherModel.swift
+//  app/Model/WeatherModel.swift
 //  2024_JPMC_Weather
 //
 //  Created by Kyle Essenmacher on 9/14/24.
 //
 
-
-import Foundation
-
-struct WeatherResponse: Codable {
-    let main: Main
+struct WeatherModel: Codable {
     let weather: [Weather]
+    let main: Main
     let name: String
+}
+
+struct Weather: Codable {
+    let description: String
 }
 
 struct Main: Codable {
     let temp: Double
 }
 
-struct Weather: Codable {
-    let description: String
-    let id: Int
-}
+
+
+
