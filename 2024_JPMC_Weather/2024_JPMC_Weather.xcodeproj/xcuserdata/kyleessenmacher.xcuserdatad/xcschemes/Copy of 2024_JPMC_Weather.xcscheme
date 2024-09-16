@@ -40,6 +40,28 @@
                ReferencedContainer = "container:2024_JPMC_Weather.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "56531CDF2C9841B7002816B5"
+               BuildableName = "2024_JPMC_WeatherUITests.xctest"
+               BlueprintName = "2024_JPMC_WeatherUITests"
+               ReferencedContainer = "container:2024_JPMC_Weather.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "56531CF92C984DF8002816B5"
+               BuildableName = "2024_JPMC_WeatherAPITests.xctest"
+               BlueprintName = "2024_JPMC_WeatherAPITests"
+               ReferencedContainer = "container:2024_JPMC_Weather.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

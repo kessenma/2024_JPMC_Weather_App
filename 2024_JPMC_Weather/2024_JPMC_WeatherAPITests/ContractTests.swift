@@ -1,9 +1,10 @@
 //
-//  CityAPIContractTests.swift
-//  2024_JPMC_Weather
+//  ContractTests.swift
+//  2024_JPMC_WeatherAPITests
 //
 //  Created by Kyle Essenmacher on 9/16/24.
 //
+
 
 import XCTest
 import Combine
@@ -49,7 +50,7 @@ class CityAPIContractTests: XCTestCase {
         let expectation = XCTestExpectation(description: "Fetch coordinates response")
         publisher.sink(receiveCompletion: { _ in
             expectation.fulfill()
-        }, receiveValue: { coordinates in
+        }, receiveValue: { coordinates in#imageLiteral(resourceName: "simulator_screenshot_0D45FEA5-0940-426D-913D-BAFFD3569B63.png")
             receivedResponse = coordinates
         }).store(in: &self.cancellables)
 

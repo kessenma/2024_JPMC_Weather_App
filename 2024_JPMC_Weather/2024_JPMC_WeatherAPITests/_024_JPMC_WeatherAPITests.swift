@@ -1,14 +1,13 @@
 //
-//  _024_JPMC_WeatherTests.swift
-//  2024_JPMC_WeatherTests
+//  _024_JPMC_WeatherAPITests.swift
+//  2024_JPMC_WeatherAPITests
 //
 //  Created by Kyle Essenmacher on 9/16/24.
 //
 
 import XCTest
 
-
-final class _024_JPMC_WeatherTests: XCTestCase {
+final class _024_JPMC_WeatherAPITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

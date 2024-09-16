@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56531CFD2C984DF8002816B5 /* _024_JPMC_WeatherAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56531CFC2C984DF8002816B5 /* _024_JPMC_WeatherAPITests.swift */; };
+		56531D042C984E0D002816B5 /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56531D032C984E0D002816B5 /* ContractTests.swift */; };
 		5672D8A72C96615C007315E0 /* _024_JPMC_WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8A62C96615C007315E0 /* _024_JPMC_WeatherApp.swift */; };
 		5672D8A92C96615C007315E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8A82C96615C007315E0 /* ContentView.swift */; };
 		5672D8AB2C96615D007315E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5672D8AA2C96615D007315E0 /* Assets.xcassets */; };
@@ -28,13 +30,17 @@
 		5672D8F22C97FBAB007315E0 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8F12C97FBAB007315E0 /* HistoryView.swift */; };
 		5672D8F42C980FE9007315E0 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8F32C980FE9007315E0 /* CurrentLocationView.swift */; };
 		5672D8F62C9811D0007315E0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8F52C9811D0007315E0 /* MainView.swift */; };
-		5672D9012C981C91007315E0 /* _024_JPMC_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D9002C981C91007315E0 /* _024_JPMC_WeatherTests.swift */; };
-		5672D9072C981D3C007315E0 /* CityAPIContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5672D8F82C981B97007315E0 /* CityAPIContractTests.swift */; };
-		5672D90C2C982760007315E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5672D90B2C982760007315E0 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		56531CD82C983763002816B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5672D89B2C96615C007315E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5672D8A22C96615C007315E0;
+			remoteInfo = 2024_JPMC_Weather;
+		};
+		56531CFE2C984DF8002816B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5672D89B2C96615C007315E0 /* Project object */;
 			proxyType = 1;
@@ -57,8 +63,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56531CD62C983613002816B5 /* 2024_JPMC_Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2024_JPMC_Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		56531CD72C983613002816B5 /* 2024_JPMC_WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2024_JPMC_WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56531CD62C983613002816B5 /* 2024_JPMC_Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = 2024_JPMC_Weather.app; path = "/Users/kyleessenmacher/WS/2024_JPMC_Weather_App/2024_JPMC_Weather/build/Debug-iphoneos/2024_JPMC_Weather.app"; sourceTree = "<absolute>"; };
+		56531CEC2C984928002816B5 /* 2024_JPMC_WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = 2024_JPMC_WeatherTests.xctest; path = "/Users/kyleessenmacher/WS/2024_JPMC_Weather_App/2024_JPMC_Weather/build/Debug-iphoneos/2024_JPMC_WeatherTests.xctest"; sourceTree = "<absolute>"; };
+		56531CFA2C984DF8002816B5 /* 2024_JPMC_WeatherAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2024_JPMC_WeatherAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56531CFC2C984DF8002816B5 /* _024_JPMC_WeatherAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _024_JPMC_WeatherAPITests.swift; sourceTree = "<group>"; };
+		56531D032C984E0D002816B5 /* ContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTests.swift; sourceTree = "<group>"; };
 		5672D8A62C96615C007315E0 /* _024_JPMC_WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _024_JPMC_WeatherApp.swift; sourceTree = "<group>"; };
 		5672D8A82C96615C007315E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5672D8AA2C96615D007315E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,17 +89,20 @@
 		5672D8F12C97FBAB007315E0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		5672D8F32C980FE9007315E0 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
 		5672D8F52C9811D0007315E0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		5672D8F82C981B97007315E0 /* CityAPIContractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAPIContractTests.swift; sourceTree = "<group>"; };
-		5672D9002C981C91007315E0 /* _024_JPMC_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _024_JPMC_WeatherTests.swift; sourceTree = "<group>"; };
-		5672D90B2C982760007315E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		56531CF72C984DF8002816B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5672D8A02C96615C007315E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5672D90C2C982760007315E0 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +116,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F8349814DDBD833C03D21B0 /* Frameworks */ = {
+		56531CFB2C984DF8002816B5 /* 2024_JPMC_WeatherAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				5672D90B2C982760007315E0 /* XCTest.framework */,
+				56531CFC2C984DF8002816B5 /* _024_JPMC_WeatherAPITests.swift */,
+				56531D032C984E0D002816B5 /* ContractTests.swift */,
 			);
-			name = Frameworks;
+			path = 2024_JPMC_WeatherAPITests;
 			sourceTree = "<group>";
 		};
 		5672D89A2C96615C007315E0 = {
@@ -118,10 +131,8 @@
 				5672D8DB2C979C4C007315E0 /* Property List.plist */,
 				5672D8B92C966282007315E0 /* ReadMe.md */,
 				5672D8A52C96615C007315E0 /* 2024_JPMC_Weather */,
-				5672D8FF2C981C91007315E0 /* 2024_JPMC_WeatherTests */,
-				0F8349814DDBD833C03D21B0 /* Frameworks */,
-				56531CD62C983613002816B5 /* 2024_JPMC_Weather.app */,
-				56531CD72C983613002816B5 /* 2024_JPMC_WeatherTests.xctest */,
+				56531CFA2C984DF8002816B5 /* 2024_JPMC_WeatherAPITests.xctest */,
+				56531CFB2C984DF8002816B5 /* 2024_JPMC_WeatherAPITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,18 +202,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5672D8FF2C981C91007315E0 /* 2024_JPMC_WeatherTests */ = {
-			isa = PBXGroup;
-			children = (
-				5672D8F82C981B97007315E0 /* CityAPIContractTests.swift */,
-				5672D9002C981C91007315E0 /* _024_JPMC_WeatherTests.swift */,
-			);
-			path = 2024_JPMC_WeatherTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		56531CF92C984DF8002816B5 /* 2024_JPMC_WeatherAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56531D002C984DF8002816B5 /* Build configuration list for PBXNativeTarget "2024_JPMC_WeatherAPITests" */;
+			buildPhases = (
+				56531CF62C984DF8002816B5 /* Sources */,
+				56531CF72C984DF8002816B5 /* Frameworks */,
+				56531CF82C984DF8002816B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56531CFF2C984DF8002816B5 /* PBXTargetDependency */,
+			);
+			name = 2024_JPMC_WeatherAPITests;
+			productName = 2024_JPMC_WeatherAPITests;
+			productReference = 56531CFA2C984DF8002816B5 /* 2024_JPMC_WeatherAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5672D8A22C96615C007315E0 /* 2024_JPMC_Weather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5672D8B62C96615D007315E0 /* Build configuration list for PBXNativeTarget "2024_JPMC_Weather" */;
@@ -236,7 +256,7 @@
 			);
 			name = 2024_JPMC_WeatherTests;
 			productName = 2024_JPMC_WeatherTests;
-			productReference = 56531CD72C983613002816B5 /* 2024_JPMC_WeatherTests.xctest */;
+			productReference = 56531CEC2C984928002816B5 /* 2024_JPMC_WeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -249,6 +269,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					56531CF92C984DF8002816B5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 5672D8A22C96615C007315E0;
+					};
 					5672D8A22C96615C007315E0 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -273,11 +297,19 @@
 			targets = (
 				5672D8A22C96615C007315E0 /* 2024_JPMC_Weather */,
 				5672D8FD2C981C91007315E0 /* 2024_JPMC_WeatherTests */,
+				56531CF92C984DF8002816B5 /* 2024_JPMC_WeatherAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		56531CF82C984DF8002816B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5672D8A12C96615C007315E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +331,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		56531CF62C984DF8002816B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56531CFD2C984DF8002816B5 /* _024_JPMC_WeatherAPITests.swift in Sources */,
+				56531D042C984E0D002816B5 /* ContractTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5672D89F2C96615C007315E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,8 +368,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5672D9012C981C91007315E0 /* _024_JPMC_WeatherTests.swift in Sources */,
-				5672D9072C981D3C007315E0 /* CityAPIContractTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +379,52 @@
 			target = 5672D8A22C96615C007315E0 /* 2024_JPMC_Weather */;
 			targetProxy = 56531CD82C983763002816B5 /* PBXContainerItemProxy */;
 		};
+		56531CFF2C984DF8002816B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5672D8A22C96615C007315E0 /* 2024_JPMC_Weather */;
+			targetProxy = 56531CFE2C984DF8002816B5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		56531D012C984DF8002816B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RHPLRY9X9P;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kessenma.-024-JPMC-WeatherAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2024_JPMC_Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2024_JPMC_Weather";
+			};
+			name = Debug;
+		};
+		56531D022C984DF8002816B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHPLRY9X9P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kessenma.-024-JPMC-WeatherAPITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2024_JPMC_Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2024_JPMC_Weather";
+			};
+			name = Release;
+		};
 		5672D8B42C96615D007315E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -488,6 +570,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MERGED_BINARY_TYPE = automatic;
 				PRODUCT_BUNDLE_IDENTIFIER = "kessenma.-024-JPMC-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -521,6 +604,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MERGED_BINARY_TYPE = automatic;
 				PRODUCT_BUNDLE_IDENTIFIER = "kessenma.-024-JPMC-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -543,7 +627,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2024_JPMC_Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2024_JPMC_Weather";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -561,13 +645,22 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2024_JPMC_Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/2024_JPMC_Weather";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56531D002C984DF8002816B5 /* Build configuration list for PBXNativeTarget "2024_JPMC_WeatherAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56531D012C984DF8002816B5 /* Debug */,
+				56531D022C984DF8002816B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5672D89E2C96615C007315E0 /* Build configuration list for PBXProject "2024_JPMC_Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
