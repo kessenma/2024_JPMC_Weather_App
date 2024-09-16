@@ -1,23 +1,25 @@
 # Coding Challenge: Weather 
 
+(insert API key inside the env.swift file)
+
 **App features:**
 1. Home Screen with app permission request for user location
-	![Home Screen](Images/0home.png)
-	![location request](Images/1LocationPrompt.png)
+	![Home Screen](images/0home.png)
+	![location request](images/1LocationPrompt.png)
 	
 2. Search for weather by current location 
-![Current Location](Images/2currentLocation.png)
-![Current Location weather](Images/3CurrentLocationCard.png)
+![Current Location](images/2currentLocation.png)
+![Current Location weather](images/3CurrentLocationCard.png)
 
 3. Search for weather by city search 
-![city search](Images/4CitySearch.png)
+![city search](images/4CitySearch.png)
 
 4. See search history
-![Search History](Images/6SearchHistory.png)
+![Search History](images/6SearchHistory.png)
 
 ** Tests ** 
 
-These are *two contract tests* written in Swift using XCTest and Combine. 
+These are *two contract tests* written in Swift using XCTest and Combine (run them via hitting command + u in Xcode)
 1. CityAPIContractTests
 a. **Arrange:** Sets up the test by defining a city name, state code, and country code.
 b. **Mock** CityAPI: Creates a mock implementation of the CityAPIProtocol that returns a predefined response (expectedResponse) when fetchCoordinates is called.

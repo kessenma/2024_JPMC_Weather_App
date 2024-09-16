@@ -6,5 +6,5 @@
 //
 
 struct Env {
-    static let apiKey = "546270a7ad449f00a347299e8837e71b"
+    static let apiKey = "______"
 }
